@@ -28,8 +28,10 @@
 \usepackage[russian]{babel}
 \usepackage{array}
 
-\newcommand{\Fsh}{F{\newcommand{\lserif{}}\#}\ }
-\newcommand{\Csh}{C{\newcommand{\lserif{}}\#}\ }
+\newcommand{\Fsh}{F{\newcommand{\lserif{}}\#}}
+\newcommand{\Csh}{C{\newcommand{\lserif{}}\#}}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
 \name{Дмитрий Панфилёнок} % Your name
 \address{Санкт-Петербург} % Your address
@@ -49,58 +51,44 @@
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Умения и Навыки}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Языки программирования & \Csh, \Fsh, Scala, C/C++, Python \\
+Фреймворки & ASP.NET Core, Kafka, Spark, OpenCL \\
+Инструменты & Git, MSSQL, Docker\\
+Иностранные языки & Английский B2
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Проекты}
 
 \begin{rSubsection}{Улучшение библиотеки обобщенных вычислений на GPGPU на \Fsh}{2021}{Дипломная работа}{}
-\item Улучшил транслятор, преобразующий AST языка \Fsh в код на OpenCL
-\item Улучшил модель управления памятью OpenCL устройства
-\item Улучшил API для параллельного исполнения ядер OpenCL
+\item Улучшил транслятор, преобразующий AST языка \Fsh в код на OpenCL.
+\item Улучшил модель управления памятью OpenCL устройства.
+\item Улучшил API для параллельного исполнения ядер OpenCL.
 \end{rSubsection}
 
-\begin{rSubsection}{Разработка библиотеки обработки графов в терминах линейной алгебры на \Fsh}{2020}{Курсовая работа}{}
-\item Разработал реализацию GraphBLAS API для языка программирования \Fsh
-\item Реализовал множество операций над разреженными матрицами на GPU с помощью OpenCL
-\item Настроил property-based тестирование средствами FsCheck и Expecto, а также CI средствами GitHub Actions и AppVeyor
+\begin{rSubsection}{Разработка библиотеки обработки графов в терминах линейной алгебры на \Fsh}{2020}{Учебная практика}{}
+\item Разработал реализацию GraphBLAS API для языка программирования \Fsh.
+\item Реализовал множество операций над разреженными матрицами на GPU с помощью OpenCL.
+\item Настроил property-based тестирование средствами FsCheck и Expecto, а также CI средствами GitHub Actions и AppVeyor.
 \end{rSubsection}
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Умения и Навыки}
-
-% \begin{rSubsection}{Языки программирования и технологии}{}{}{}
-% \item \Fsh, \Csh, SQL, Git (средний уровень)
-% \item OpenCL, Linux (есть опыт)
-% \item C/C++, Python, R, x86, Android, TensorFlow (знакомство)
-% \end{rSubsection}
-
-% \begin{tabular}{l l l m{2cm}}
-% & средний уровень & есть опыт & знакомство \\ 
-% \textbf{Языки программирования} & F\# & C\# & C/C++, R, Python \\
-% \textbf{Инструменты} & .NET, OpenCL, Git & Linux, Bash & x86, SAFE Stack, ASP.NET Core, Docker \\
-% Иностранные языки & Английский, Немецкий
-% \end{tabular}
-
-\begin{tabular}{l l l}
-& \textbf{Языки программирования} & \textbf{Инструменты} \\ 
-\textbf{Средний уровень} & \Fsh & .NET, OpenCL, Git \\
-\textbf{Есть опыт} & \Csh, Scala & Linux, Bash, SQL  \\
-\textbf{Знакомство} & C/C++, R, Python & x86, Android, ASP.NET Core, Spark, Docker \\
-\end{tabular}
-\\
-\end{rSection}
-
-\begin{rSection}{Языки}
-\begin{itemize}
-\item Русский (родной)
-\item Английский (B2, Upper Intermediate)
-\end{itemize}
+\begin{rSection}{Курсы}
+\itab{Проектирование программного обеспечения}  \tab{}  \tab{Базы данных и СУБД} \\
+\itab{Функциональное программирование} \tab{} \tab{Компьютерные сети и хранилища данных} \\
+\itab{Введение в Linux} \tab{}  \tab{Распределенная обработка информации}
 \end{rSection}
 
 \end{document}
