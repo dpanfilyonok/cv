@@ -15,6 +15,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: PanfilyonokCV-ru.tex
+          args: "-pdf -file-line-error -interaction=nonstopmode"
         env:
           TEXINPUTS: ".:"
         
