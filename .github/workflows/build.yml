@@ -58,6 +58,6 @@ jobs:
         uses: softprops/action-gh-release@v0.1.14
         with:
           files: PanfilyonokCV-ru.pdf
-          name: Release ${{ github.ref }}
+          name: CV
           tag_name: ${{ github.ref }}
             
