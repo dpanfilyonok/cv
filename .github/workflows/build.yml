@@ -19,10 +19,16 @@ jobs:
 #         env:
 #           TEXINPUTS: ".:"
         
-      - uses: actions/upload-artifact@v2
+#       - uses: actions/upload-artifact@v2
+#         with:
+#           name: cv
+#           path: PanfilyonokCV-ru.pdf
+
+      - uses: actions/cache@v3.0.3
+#         id: restore-build
         with:
-          name: cv
           path: PanfilyonokCV-ru.pdf
+          key: ${{ github.sha }}
           
   artifact-use-build:
     name: Re-use Artifact
@@ -33,11 +39,17 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
         
-      - uses: actions/download-artifact@v2
+#       - uses: actions/download-artifact@v2
+#         with:
+#           name: cv
+
+      - uses: actions/cache@v3.0.3
+#         id: restore-build
         with:
-          name: cv
+          path: PanfilyonokCV-ru.pdf
+          key: ${{ github.sha }}
           
-      - run: unzip cv.zip
+#       - run: unzip cv.zip
       
       - name: Release
         uses: softprops/action-gh-release@v1
