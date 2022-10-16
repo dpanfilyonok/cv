@@ -1,0 +1,117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{array}
+\usepackage{hyperref}
+
+\newcommand{\Fsh}{F{\newcommand{\lserif{}}\#}}
+\newcommand{\Csh}{C{\newcommand{\lserif{}}\#}}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Dmitriy Panfilyonok} % Your name
+\address{Saint-Petersburg} % Your address
+\address{dmitriy.panfilyonok@gmail.com \\ \href{https://github.com/dpanfilyonok}{github.com/dpanfilyonok}} 
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Saint-Petersburg State University} \hfill {2018 --- 2022} \\
+{\em Software and Administration of Information Systems} \\
+{\em Faculty of Math and Mechanics} \hfill {\em bachelor's degree} 
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills and Competencies}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming languages & \Csh, \Fsh, Scala \\
+Frameworks & ASP.NET Core, EF Core, OpenCL \\
+Tools & Git, PostgreSQL, Docker \\
+Languages & English B2, Russian Native
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{JetBrains Research}{July 2021 --- August 2021}{Intern Programmer / Researcher}{}
+\item Implemented support for generalized atomic operations in a high-performance OpenCL library using the \Fsh~programming language.
+\item \textbf{Stack}: \Fsh, OpenCL, GPU, metaprogramming, transpilation.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+\begin{rSubsection}{\href{https://github.com/dpanfilyonok/Brahma.FSharp.REPL}{A web application that allows to translate \Fsh~code into OpenCL}}{2022}{Pet-project}{}
+\item Implemented the server side of the application using ASP.NET Core and Giraffe. 
+\item Implemented the client side of the application using React.
+\item Configured the deployment environment in Docker.
+\item Deployed the app to Heroku and Github Pages.
+\end{rSubsection}
+
+\begin{rSubsection}{\href{https://github.com/dpanfilyonok/Brahma.FSharp}{Improving the GPGPU generalized computation library on \Fsh}}{2021}{Graduate work}{}
+\item Improved the translator that converts AST of the \Fsh~language into OpenCL code.
+\item Improved OpenCL device memory management model.
+\item Improved API for parallel execution of OpenCL kernels.
+\end{rSubsection}
+
+\begin{rSubsection}{\href{https://github.com/dpanfilyonok/GraphBLAS-sharp}{Development of linear algebra based graph processing library on \Fsh}}{2020}{Educational practice}{}
+\item Developed an implementation of the GraphBLAS API for the \Fsh programming language.
+\item Implemented a subset of operations on sparse matrices on GPU using OpenCL.
+\item Set up property-based testing with FsCheck and Expecto, as well as CI with GitHub Actions and AppVeyor.
+\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Courses}
+\itab{Software Design}  \tab{}  \tab{Databases and DBMS} \\
+\itab{Functional programming} \tab{} \tab{Computer networks and data storage} \\
+\itab{Introduction to Linux} \tab{}  \tab{Distributed information processing}
+\end{rSection}
+
+\end{document}
+

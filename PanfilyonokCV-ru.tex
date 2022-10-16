@@ -27,6 +27,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage{array}
+\usepackage{hyperref}
 
 \newcommand{\Fsh}{F{\newcommand{\lserif{}}\#}}
 \newcommand{\Csh}{C{\newcommand{\lserif{}}\#}}
@@ -35,7 +36,7 @@
 
 \name{Дмитрий Панфилёнок} % Your name
 \address{Санкт-Петербург} % Your address
-\address{dmitriy.panfilyonok@gmail.com \\ github.com/dpanfilyonok} 
+\address{dmitriy.panfilyonok@gmail.com \\ \href{https://github.com/dpanfilyonok}{github.com/dpanfilyonok}} 
 
 \begin{document}
 
@@ -85,20 +86,20 @@
 
 \begin{rSection}{Проекты}
 
-\begin{rSubsection}{Веб-приложение, позволяющее транслировать код на F\# в OpenCL}{2022}{Pet-проект}{}
+\begin{rSubsection}{\href{https://github.com/dpanfilyonok/Brahma.FSharp.REPL}{Веб-приложение, позволяющее транслировать код на \Fsh~в OpenCL}}{2022}{Pet-проект}{}
 \item Реализовал серверную часть приложения с помощью ASP.NET Core и Giraffe. 
 \item Реализовал клиентскую часть приложения с помощью React.
 \item Настроил среду развертывания в Docker.
 \item Развернул приложение на Heroku и Github Pages.
 \end{rSubsection}
 
-\begin{rSubsection}{Улучшение библиотеки обобщенных вычислений на GPGPU на \Fsh}{2021}{Дипломная работа}{}
+\begin{rSubsection}{\href{https://github.com/dpanfilyonok/Brahma.FSharp}{Улучшение библиотеки обобщенных вычислений на GPGPU на \Fsh}}{2021}{Дипломная работа}{}
 \item Улучшил транслятор, преобразующий AST языка \Fsh~в код на OpenCL.
 \item Улучшил модель управления памятью OpenCL устройства.
 \item Улучшил API для параллельного исполнения ядер OpenCL.
 \end{rSubsection}
 
-\begin{rSubsection}{Разработка библиотеки обработки графов в терминах линейной алгебры на \Fsh}{2020}{Учебная практика}{}
+\begin{rSubsection}{\href{https://github.com/dpanfilyonok/GraphBLAS-sharp}{Разработка библиотеки обработки графов в терминах линейной алгебры на \Fsh}}{2020}{Учебная практика}{}
 \item Разработал реализацию GraphBLAS API для языка программирования \Fsh.
 \item Реализовал подмножество операций над разреженными матрицами на GPU с помощью OpenCL.
 \item Настроил property-based тестирование средствами FsCheck и Expecto, а также CI средствами GitHub Actions и AppVeyor.
