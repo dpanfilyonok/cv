@@ -24,8 +24,8 @@ jobs:
       - uses: actions/cache@v3.0.3
         with:
           path: |
-            PanfilyonokCV-ru.tex
-            PanfilyonokCV.tex
+            PanfilyonokCV-ru.pdf
+            PanfilyonokCV.pdf
           key: ${{ github.sha }}
           
   release:
@@ -39,15 +39,15 @@ jobs:
       - uses: actions/cache@v3.0.3
         with:
           path: |
-            PanfilyonokCV-ru.tex
-            PanfilyonokCV.tex
+            PanfilyonokCV-ru.pdf
+            PanfilyonokCV.pdf
           key: ${{ github.sha }}
           
       - uses: softprops/action-gh-release@v0.1.14
         with:
           files: |
-            PanfilyonokCV-ru.tex
-            PanfilyonokCV.tex
+            PanfilyonokCV-ru.pdf
+            PanfilyonokCV.pdf
           name: CV
           tag_name: ${{ github.ref }}
           
